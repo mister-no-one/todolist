@@ -5,10 +5,11 @@
 }
 
 body{
-	font-family: Arial, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 header h1{
 	color: white;
+	letter-spacing: .3em;
 }
 
 header{
@@ -35,28 +36,25 @@ header .number{
 
 li.listElement{
 	list-style: none;
-	margin: 3em;
+	margin: 2em;
 }
 
 span.numberList{
-	border: 2px solid black;
-	padding: .3em;
-	margin-right: 1em;
-}
-
-footer{
-	background-color: #1D2228;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	padding:0.5em;
-	text-align: center;
-}
-
-footer p {
-	color:white;
+	display: inline-block;
+	padding: 0;
+	width: 30px;
+	height: 30px;    
+	line-height: 30px;
+	color:black;
 	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border: 2.5px solid black;
+	border-radius:50px;
+	position: relative;
+	top: -3px;
+	margin-right: 1em;
 }
 
 section.new-item{
@@ -64,7 +62,7 @@ section.new-item{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #EFEFEF;
+	background-color: #E1E2E2;
 	padding-bottom: 4em;
 	padding-top: 2em;
 	padding-left: 2em;
@@ -73,6 +71,7 @@ section.new-item{
 
 h2{
 	color: #1D2228;
+	font-size: 1.2em;
 }
 
 input[type=text] {
@@ -98,4 +97,20 @@ input.submit{
 input.submit:hover {
 	background-color: #4CAF50; /* Green */
 	color: white;
+}
+
+footer{
+	background-color: #1D2228;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding:0.5em;
+	text-align: center;
+}
+
+footer p {
+	color:white;
+	font-weight: 500;
+	letter-spacing: .5em;
 }

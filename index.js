@@ -18,3 +18,25 @@ var List = [
 
 	var valueCounter= document.querySelector(".number");
 	valueCounter.innerHTML = counter;
+
+	
+
+
+
+
+
+	var formItem = document.querySelector(".submit");
+	formItem.addEventListener("submit",function(e){
+		e.preventDefault();
+		processAdding();
+	});
+
+	console.log(formItem);
+
+	function processAdding(){
+		var labelItem = document.querySelector(".item-label");
+		var value = labelItem.value;
+		console.log(labelItem);
+
+
+	}
