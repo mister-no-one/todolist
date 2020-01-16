@@ -43,3 +43,59 @@ span.numberList{
 	padding: .3em;
 	margin-right: 1em;
 }
+
+footer{
+	background-color: #1D2228;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding:0.5em;
+	text-align: center;
+}
+
+footer p {
+	color:white;
+	font-weight: bold;
+}
+
+section.new-item{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #EFEFEF;
+	padding-bottom: 4em;
+	padding-top: 2em;
+	padding-left: 2em;
+	bottom: 0;
+}
+
+h2{
+	color: #1D2228;
+}
+
+input[type=text] {
+	margin-top: .6em;
+	background-color: rgba(251, 129, 34,0.6);
+	color: #1D2228;
+	width: 20em;
+	height: 2em;
+	border-radius: 5px; 
+
+}
+
+input.submit{
+	background-color: #1D2228;
+	color: white;
+	width: 3em;
+	height: 2em;
+	border-radius: 5px; 
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+input.submit:hover {
+	background-color: #4CAF50; /* Green */
+	color: white;
+}
