@@ -18,7 +18,11 @@ header{
 	padding: 1em;
 	text-transform: uppercase;
 	display: flex;
-	justify-content:space-between;
+	justify-content:space-around;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
 }
 
 header .number-container{
@@ -72,6 +76,7 @@ section.new-item{
 section.list-item{
 	margin-bottom: 100px;
 	padding-bottom: 100px;
+	margin-top: 7em;
 }
 
 h2{
@@ -86,7 +91,6 @@ input[type=text] {
 	width: 20em;
 	height: 2em;²
 	border-radius: 5px; 
-
 }
 
 input.submit{
@@ -97,11 +101,6 @@ input.submit{
 	border-radius: 5px; 
 	-webkit-transition-duration: 0.4s; /* Safari */
 	transition-duration: 0.4s;
-}
-
-input.submit:hover {
-	background-color: #4CAF50; /* Green */
-	color: white;
 }
 
 .new-item{
@@ -123,4 +122,9 @@ footer p {
 	color:white;
 	font-weight: 500;
 	letter-spacing: .5em;
+}
+
+.listElement{
+	border-bottom: 1px solid rgba(251, 129, 34,0.3);
+	padding-bottom: 1em;
 }

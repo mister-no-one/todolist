@@ -30,4 +30,6 @@ var list = [
 
 	console.log(formItem);
 
+	console.log(list);
+
 
