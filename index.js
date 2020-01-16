@@ -12,9 +12,7 @@ var list = [
 	var valueList = document.querySelector(".list");
 	var i = 1;
 
-
 	for (var valeur of list) {
-		
 		valueList.insertAdjacentHTML('beforebegin','<li class="listElement"><span class="numberList">'+ i +'</span>'+ valeur.label +'</li>');
 		console.log("valueList");
 		var counter = i++;
@@ -27,11 +25,9 @@ var list = [
 	formItem.addEventListener("submit",function(e){
 		e.preventDefault();
 		processAdding();
+		formItem.reset();
 	});
 
 	console.log(formItem);
-
-
-
 
 

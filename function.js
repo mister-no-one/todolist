@@ -3,6 +3,7 @@
 		var labelItem = document.querySelector(".item-label");
 		var newItemValue = labelItem.value;
 
+		if(newItemValue.length > 0){
 	// ITEM ET PUSH INTO LIST
 	var newItem = {};
 	newItem.label = newItemValue;
@@ -13,4 +14,5 @@
 
 	// UPDATE TOTAL ITEM
 	valueCounter.innerHTML = countItem;
+}
 }
