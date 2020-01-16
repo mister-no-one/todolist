@@ -13,7 +13,6 @@ var list = [
 	var i = 1;
 
 
-
 	for (var valeur of list) {
 		
 		valueList.insertAdjacentHTML('beforebegin','<li class="listElement"><span class="numberList">'+ i +'</span>'+ valeur.label +'</li>');
@@ -24,8 +23,6 @@ var list = [
 	var valueCounter= document.querySelector(".number");
 	valueCounter.innerHTML = counter;
 
-	
-
 	var formItem = document.querySelector(".form");
 	formItem.addEventListener("submit",function(e){
 		e.preventDefault();
@@ -34,20 +31,7 @@ var list = [
 
 	console.log(formItem);
 
-	function processAdding(){
 
-		var labelItem = document.querySelector(".item-label");
-		var newItemValue = labelItem.value;
 
-	// ITEM ET PUSH INTO LIST
-	var newItem = {};
-	newItem.label = newItemValue;
-	var countItem = list.push(newItem);
 
-	// VIEW PROCESSING
-	valueList.insertAdjacentHTML('beforebegin','<li class="listElement"><span class="numberList">'+ countItem +'</span>'+ newItem.label +'</li>');
 
-	// UPDATE TOTAL ITEM
-	var valueCounter= document.querySelector(".number");
-	valueCounter.innerHTML = countItem;
-}

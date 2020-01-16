@@ -101,12 +101,12 @@ input.submit:hover {
 
 footer{
 	background-color: #1D2228;
-	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	padding:0.5em;
 	text-align: center;
+	position: fixed;
 }
 
 footer p {
