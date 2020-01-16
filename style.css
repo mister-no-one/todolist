@@ -27,8 +27,19 @@ header .number-container{
 	padding-top: .5em;
 }
 
-
 header .number{
 	color: white;
 	font-weight: bold; 
 	font-size: 18px;
+}
+
+li.listElement{
+	list-style: none;
+	margin: 3em;
+}
+
+span.numberList{
+	border: 2px solid black;
+	padding: .3em;
+	margin-right: 1em;
+}
