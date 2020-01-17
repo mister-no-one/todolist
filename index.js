@@ -16,6 +16,7 @@ var list = [
 		valueList.insertAdjacentHTML('beforebegin','<li class="listElement"><span class="numberList">'+ i +'</span>'+ valeur.label +'</li>');
 		console.log("valueList");
 		var counter = i++;
+		console.log(i);
 	};
 
 	var valueCounter= document.querySelector(".number");
@@ -24,12 +25,7 @@ var list = [
 	var formItem = document.querySelector(".form");
 	formItem.addEventListener("submit",function(e){
 		e.preventDefault();
-		processAdding();
+		processAdding(list,valueCounter);
 		formItem.reset();
 	});
-
-	console.log(formItem);
-
-	console.log(list);
-
 

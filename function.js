@@ -1,5 +1,4 @@
-	function processAdding(){
-
+	function processAdding(list,valueCounter){
 		var labelItem = document.querySelector(".item-label");
 		var newItemValue = labelItem.value;
 
@@ -8,11 +7,9 @@
 	var newItem = {};
 	newItem.label = newItemValue;
 	var countItem = list.push(newItem);
-	newItem.id = countItem;
-	list.push(newItem);
 
 	// VIEW PROCESSING
-	valueList.insertAdjacentHTML('beforebegin','<li id="'+ countItem +'" class="listElement"><span class="numberList">'+ countItem +'</span>'+ newItem.label +'</li>');
+	valueList.insertAdjacentHTML('beforebegin','<li id="'+ countItem +'"class="listElement"><span class="numberList">'+ countItem +'</span>'+ newItem.label +'</li>');
 
 	// UPDATE TOTAL ITEM
 	valueCounter.innerHTML = countItem;
