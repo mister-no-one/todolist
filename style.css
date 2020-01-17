@@ -145,3 +145,7 @@ footer p {
 .deleted-element{
 	opacity: .4;
 }
+
+.deleted-element a{
+	display: none;
+}

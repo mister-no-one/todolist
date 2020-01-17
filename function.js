@@ -34,15 +34,11 @@ function processAdding(list,valueCounter){
 	liElement.appendChild(spanLabel);
 	liElement.appendChild(aElement);
 
-	// SUPPRIMER UN ELEMENT
-	// var deleteButton = document.querySelector(".btn-delete");
-	// if(deleteButton){
-		aElement.addEventListener('click',function(e){
-			e.target.parentNode.classList.add("deleted-element");
-			console.log(e);
-			console.log(e.target);
-		});
-	// }
+	aElement.addEventListener('click',function(e){
+		e.target.parentNode.classList.add("deleted-element");
+		console.log(e);
+		console.log(e.target);
+	});
 
 	// UPDATE TOTAL ITEM
 	valueCounter.innerHTML = countItem;
@@ -62,3 +58,4 @@ function countItem(list,valueList,valueCounter){
 
 	valueCounter.innerHTML = counter;
 }
+

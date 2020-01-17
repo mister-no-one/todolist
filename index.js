@@ -15,12 +15,6 @@ formItem.addEventListener("submit",function(e){
 	formItem.reset();
 });
 
-// SUPPRESSION
-var deleteButton = document.querySelector(".btn-delete");
-
-if(deleteButton){
-	
-	deleteButton.addEventListener('click',function(e){
-		console.log(e);
-	});
-}
+// TODO 
+// - LOCAL STORAGE 
+// - AFFICHER / MASQUER AJOUT NOUVEAU PRODUIT
