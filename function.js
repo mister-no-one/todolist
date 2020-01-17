@@ -1,8 +1,10 @@
-	function processAdding(list,valueCounter){
-		var labelItem = document.querySelector(".item-label");
-		var newItemValue = labelItem.value;
+function processAdding(list,valueCounter){
 
-		if(newItemValue.length > 0){
+	console.log("start processing adding");
+	var labelItem = document.querySelector(".item-label");
+	var newItemValue = labelItem.value;
+
+	if(newItemValue.length > 0){
 	// ITEM ET PUSH INTO LIST
 	var newItem = {};
 	newItem.label = newItemValue;
@@ -32,17 +34,25 @@
 	liElement.appendChild(spanLabel);
 	liElement.appendChild(aElement);
 
+	// SUPPRIMER UN ELEMENT
+	// var deleteButton = document.querySelector(".btn-delete");
+	// if(deleteButton){
+		aElement.addEventListener('click',function(e){
+			e.target.parentNode.classList.add("deleted-element");
+			console.log(e);
+			console.log(e.target);
+		});
+	// }
+
 	// UPDATE TOTAL ITEM
 	valueCounter.innerHTML = countItem;
+	console.log("end processing adding");
 }
 }
 
 function countItem(list,valueList,valueCounter){
 	for (var valeur of list) {
-		valueList.insertAdjacentHTML('beforebegin','<li class="listElement"><span class="numberList">'+ i +'</span>'+ valeur.label +'</li>');
-		console.log("valueList");
 		var counter = i++;
-		console.log(i);
 	};
 
 	// If no product 

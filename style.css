@@ -130,5 +130,18 @@ footer p {
 }
 
 .btn-delete{
+	float: right;
+	background-color: black;
+	color: white;
+	padding:.5em;
+	text-decoration: none;
+	border-radius: 5px; 
+}
 
+.btn-delete:hover{
+	cursor: pointer;
+}
+
+.deleted-element{
+	opacity: .4;
 }
