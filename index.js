@@ -1,31 +1,17 @@
-var list = [
-{
-	label:"Ananas", status:"suppr", important:"1"
-},
-{
-	label:"Banane", status:"suppr", important:"1"
-},
-{
-	label:"Pomme", status:"suppr", important:"1"}];
+var list = [];
 
+var valueList = document.querySelector(".list");
+var i = 1;
 
-	var valueList = document.querySelector(".list");
-	var i = 1;
+// COUNT
+var valueCounter = document.querySelector(".number");
+countItem(list,valueList,valueCounter);
 
-	for (var valeur of list) {
-		valueList.insertAdjacentHTML('beforebegin','<li class="listElement"><span class="numberList">'+ i +'</span>'+ valeur.label +'</li>');
-		console.log("valueList");
-		var counter = i++;
-		console.log(i);
-	};
-
-	var valueCounter= document.querySelector(".number");
-	valueCounter.innerHTML = counter;
-
-	var formItem = document.querySelector(".form");
-	formItem.addEventListener("submit",function(e){
-		e.preventDefault();
-		processAdding(list,valueCounter);
-		formItem.reset();
-	});
+// FORMULAIRE
+var formItem = document.querySelector(".form");
+formItem.addEventListener("submit",function(e){
+	e.preventDefault();
+	processAdding(list,valueCounter);
+	formItem.reset();
+});
 
